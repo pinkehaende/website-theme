@@ -2,13 +2,6 @@
 
 Hero is a multi-page business theme with fullscreen hero images and fullwidth sections.
 
-[Live Demo](https://hugo-hero.netlify.com/) |
-[Zerostatic Themes](https://www.zerostatic.io/theme/hugo-hero/)
-
-<a href="https://www.buymeacoffee.com/zerostatic" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
-![Hugo Hero Theme screenshot](https://www.zerostatic.io/theme/hugo-hero/hugo-hero-screenshot.png)
-
 ## Features
 
 **Content Types**
@@ -53,7 +46,6 @@ Hero is a multi-page business theme with fullscreen hero images and fullwidth se
 - Animated hamburger menu on mobile
 
 **Content**
-- Robust example content included
 - Royalty free illustrations included
 
 ## Installation
@@ -76,32 +68,24 @@ hugo new site mynewsite
 
 **3. Install the theme**
 
-Download or git clone this theme into the sites themes folder `mynewsite/themes`. You should end up with the following folder structure `mynewsite/themes/hugo-hero-theme`
+Download or git clone this theme into the sites themes folder `mynewsite/themes`. You should end up with the following folder structure `mynewsite/themes/pinkehaende-theme`
 
 ```
 cd mynewsite
-git clone https://github.com/zerostaticthemes/hugo-hero-theme.git themes/hugo-hero-theme
+git clone https://github.com/pinkehaende/website-theme.git themes/pinkehaende-theme
 ```
 
-**4. Copy the example content**
-
-Copy the entire contents of the `mynewsite/themes/hugo-hero-theme/exampleSite/` folder to root folder of your Hugo site, ie `mynewsite/`. To copy the files using terminal, make sure you are still in the projects root, ie the `mynewsite` folder.
-
-```
-cp -a themes/hugo-hero-theme/exampleSite/. .
-```
-
-**5. Update config.toml**
+**4. Update config.toml**
 
 After you copy the `config.toml` into the root folder of your Hugo site you will need to update the `baseURL`, `themesDir` and `theme` values in `mynewsite/config.toml`
 
 ```
 baseURL = "/"
 themesDir = "themes"
-theme = "hugo-hero-theme"
+theme = "pinkehaende-theme"
 ```
 
-**6. Run Hugo**
+**5. Run Hugo**
 
 After installing the theme for the first time, generate the Hugo site.
 
@@ -118,13 +102,6 @@ hugo server
 ```
 
 Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
-
-## Deployment
-### Netlify
-
-Use Netlify to deploy this theme. This theme contains a valid and tested `netlify.toml` - Feel free to use the 1-click deploy below.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zerostaticthemes/hugo-hero-theme)
 
 ## Configuring Theme
 
@@ -178,28 +155,3 @@ Add your google analytics ID to the `config.toml`
 ### Menu
 
 You can edit and add main menu links in the `config.toml` under `[[menu.main]]`
-
-## Extras
-
-### License
-
-- Don't create ports or new versions of this theme without asking me
-- You can't re-distribute or re-sell this theme as your own template
-
-### Credits 
-
-- Beautiful royalty free Illustrations by Icons8 - https://icons8.com/illustrations/style--pixeltrue
-- Stock images by Unsplash - https://unsplash.com/
-- Feature icons by Noun Project - https://thenounproject.com/
-
-### Other Hugo Themes by Zerostatic
-
-- [Hugo Whisper](https://github.com/zerostaticthemes/hugo-whisper-theme)
-- [Hugo Serif](https://github.com/zerostaticthemes/hugo-serif-theme)
-- [Hugo Winston](https://github.com/zerostaticthemes/hugo-winston-theme)
-- [Hugo Advance](https://www.zerostatic.io/theme/hugo-advance/)
-- [Hugo Paradigm](https://www.zerostatic.io/theme/hugo-paradigm/)
-
-
-🇦🇺 **Made in Australia** by Robert Austin - Support our work - **Star this repo** ⭐
-
