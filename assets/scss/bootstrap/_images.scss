@@ -6,7 +6,10 @@
 // which weren't expecting the images within themselves to be involuntarily resized.
 // See also https://github.com/twbs/bootstrap/issues/18178
 .img-fluid {
-  @include img-fluid;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 
