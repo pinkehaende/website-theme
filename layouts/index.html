@@ -29,7 +29,13 @@
       <div class="col-12 col-md-6 {{ if eq .Params.align "right" }}offset-md-6{{ end }}">
         <h2 class="text-primary text-capitalize">{{ .Title }}</h2>
         <p>{{ .Content }}</p>
-        <a class="button" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
+        {{ if (hasPrefix .Params.buttonLink "mailto:") }}
+          <a class="button" href="{{ .Params.buttonLink }}">{{ .Params.button }}</a>
+        {{ else if (hasPrefix .Params.buttonLink "https://") }}
+          <a class="button" href="{{ .Params.buttonLink }}" target="blank">{{ .Params.button }}</a>
+        {{ else }}
+          <a class="button" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
+        {{ end }}
       </div>
     </div>
   </div>
