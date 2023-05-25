@@ -23,7 +23,7 @@
 {{ $reusablePages := $headless.Resources.ByType "page" }}
 {{ $reusablePages := sort $reusablePages ".Params.weight" }}
 {{ range first 4 $reusablePages }}
-<div id="home" class="strip bg-cover bg-position-top bg-overlay" style="background-image: url('{{ .Params.background | relURL }}');background-color: #D7D6D6D1;background-position: center;">
+<div id="home" class="strip bg-cover bg-position-top bg-overlay" style="background-image: url('{{ .Params.background | relURL }}');background-color: #efefefd1;background-position: center;">
   <div class="container pt-17 pb-17">
     <div class="row">
       <div class="col-12 col-md-6 {{ if eq .Params.align "right" }}offset-md-6{{ end }}">
