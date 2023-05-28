@@ -6,8 +6,9 @@
   {{ end }}
   <div class="service-content">
     <h2 class="service-title">
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <p style="font-size: 1.3em; color: #f800ff; font-weight: 400;">{{ .Title }}</p>
+      <!--<a href="{{ .Permalink }}">{{ .Title }}</a>-->
     </h2>
-    {{ .Content | truncate 120 "..." }}
+    {{ .Content }} <!--| truncate 120 "..." -->
   </div>
 </div>

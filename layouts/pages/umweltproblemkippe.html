@@ -14,7 +14,7 @@
     <!--<div class="col-12">
       <h3 class="text-center mb-3">Hier findet Ihr einige der Problematiken</h2>
     </div>-->
-    {{ range first 6 (sort $services ".Params.weight") }}
+    {{ range first 11 (sort $services ".Params.weight") }}
     <div class="col-12 col-md-4 mb-1">
       {{ .Render "summary" }}
     </div>
